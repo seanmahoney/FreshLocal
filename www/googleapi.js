@@ -12,6 +12,6 @@ function initMap() {
         title: 'Hello World!'
     });
     marker.addListener('click', function() {
-        window.location.replace("secondpage.html");
+        window.location.replace("marketHome.php");
     });
 }
