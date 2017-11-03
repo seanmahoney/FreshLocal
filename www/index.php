@@ -12,9 +12,13 @@
     async defer></script>
 </head>
 <body>
-	<div id="google_map"></div>
 
-    
-    
+<?php
+include 'function.php';
+get_header();
+?> 
+<div id="google_map"></div>
+
+
 </body>
 </html>
