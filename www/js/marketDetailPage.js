@@ -13,7 +13,7 @@ farmer.appendChild(ulForFarmer);
 //window.onload=function(){
 	shape=getParameterByName("shape");
 	var img= document.getElementById("shape");
-	img.src=shape+".png";
+	img.src="img/"+shape+".png";
 	img.alt=shape;
 	img.style.width="600px";
 	img.style.height="400px";

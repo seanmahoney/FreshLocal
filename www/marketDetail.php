@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Market Detail Page</title>
-	<link rel="stylesheet" type="text/css" href="marketDetailPage.css">
+	<link rel="stylesheet" type="text/css" href="css/marketDetailPage.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
 <?php
@@ -21,6 +23,6 @@ get_header();
 		<img src="" alt="" id="shape">
 	</section>
 
-	<script type="text/javascript" src="marketDetailPage.js"></script>
+	<script type="text/javascript" src="js/marketDetailPage.js"></script>
 </body>
 </html>

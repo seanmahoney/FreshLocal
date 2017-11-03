@@ -33,27 +33,27 @@ function chooseArea(e){
   var y = event.offsetY?(event.offsetY):event.pageY-document.getElementById("myCanvas").offsetTop;
   var url;
   if(x>10 && x<306 && y>10 && y<160){
-    url="marketDetail.html"+"?"+"shape="+"rec1";
+    url="marketDetail.php"+"?"+"shape="+"rec1";
     window.location.assign(url);
   }
 
   if(x>30 && x<122 && y>195 && y<350){
-    url="marketDetail.html"+"?"+"shape="+"rec2";
+    url="marketDetail.php"+"?"+"shape="+"rec2";
     window.location.assign(url);
   }
 
   if(x>157 && x<395 && y>200 && y<342){
-    url="marketDetail.html"+"?"+"shape="+"circle";
+    url="marketDetail.php"+"?"+"shape="+"circle";
     window.location.assign(url);
   }
 
   if(x>341 && x<693 && y>18 && y<164){
-    url="marketDetail.html"+"?"+"shape="+"weirdShape";
+    url="marketDetail.php"+"?"+"shape="+"weirdShape";
     window.location.assign(url);
   }
 
   if(x>454 && x<660 && y>197 && y<347){
-    url="marketDetail.html"+"?"+"shape="+"triangle";
+    url="marketDetail.php"+"?"+"shape="+"triangle";
     window.location.assign(url);
   }
 

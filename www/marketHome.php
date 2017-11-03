@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Scotia Farmer Market</title>
-	<link rel="stylesheet" type="text/css" href="marketHomePage.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/marketHomePage.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 
 </head>
@@ -37,15 +37,15 @@ get_header();
 	<section id="marketLayout">
 		<canvas id="myCanvas" width="700px" height="400px" onclick="chooseArea()">
 		</canvas>
-		<img src="rec1.png" alt="rectangle" class="shape" id="rec1" >
-		<img src="rec2.png" alt="rectangle" class="shape" id="rec2" >
-		<img src="circle.png" alt="circle" class="shape" id="circle" >
-		<img src="triangle.png" alt="triangle" class="shape" id="triangle" >
-		<img src="weirdShape.png" alt="weirdShape" class="shape" id="weirdShape" >
+		<img src="img/rec1.png" alt="rectangle" class="shape" id="rec1" >
+		<img src="img/rec2.png" alt="rectangle" class="shape" id="rec2" >
+		<img src="img/circle.png" alt="circle" class="shape" id="circle" >
+		<img src="img/triangle.png" alt="triangle" class="shape" id="triangle" >
+		<img src="img/weirdShape.png" alt="weirdShape" class="shape" id="weirdShape" >
 	</section>
-	<script type="text/javascript" src="marketHomePage.js"></script>
+	<script type="text/javascript" src="js/marketHomePage.js"></script>
 	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmsF5dahXPHLLuF3I71hfn7oYxprhHfkY&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWpmbfEK8UxIQXHP7_f8mseRJijUEfWz4&callback=initMap">
     </script>
 
 </body>

@@ -6,8 +6,8 @@
 	<meta name="author" content="Group3">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="googleapi.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/googleapi.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWpmbfEK8UxIQXHP7_f8mseRJijUEfWz4&callback=initMap"
     async defer></script>
 </head>
