@@ -4,7 +4,7 @@
   	get_logo();
   	
     echo "<ul class='main_navigation'>";
-	echo "<li class='main_navigation_item'><a class='main_navigation_link active' href='#home'>Home</a></li>";
+	echo "<li class='main_navigation_item'><a class='main_navigation_link active' href='index.php'>Home</a></li>";
 	echo "<li class='main_navigation_item'><a class='main_navigation_link' href='#news'>Product</a></li>";
 	echo "<li class='main_navigation_item'><a class='main_navigation_link' href='#contact'>Map</a></li>";
 	echo "<li class='main_navigation_item'><a class='main_navigation_link' href='#about'>Contact</a></li>";
