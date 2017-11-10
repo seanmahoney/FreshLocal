@@ -52,6 +52,8 @@ function filterShop(item){
 function farmerInfo(name){
 	return function(){
 		alert("Show farmer :" +name+" info");
+		url="Profile.php"+"?"+"farmerID="+name;
+		window.location.assign(url);
 	}
 }
 function getParameterByName(name, url) {
