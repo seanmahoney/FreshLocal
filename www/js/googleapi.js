@@ -9,7 +9,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: market1,
         map: map,
-        title: 'Hello World!'
+        title: 'Seaport Farmer\'s Market'
     });
     marker.addListener('click', function() {
         window.location.replace("marketHome.php");
