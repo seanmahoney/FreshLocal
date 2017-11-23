@@ -1,0 +1,78 @@
+#mainArea{
+  margin-left: 4%;
+  margin-top: 40px;
+}
+
+#headline{
+  float:left;
+  display:inline-block;
+  width:45%;
+}
+
+#headlineText{
+  width:100%;
+}
+
+#headline:after{
+  clear:left;
+}
+
+
+#videoSection{
+  width:25%;
+  display:inline-block;
+  float:right;
+  margin-right: 10%;
+  height:auto;
+}
+
+#videoSeaction:after {
+  clear:right;
+}
+
+#video{
+  width:100%;
+  height:100px;
+}
+#contentSection{
+  display:inline-block;
+  width:100%;
+  height:auto;  
+  margin-top:-50px;
+}
+
+#content{
+  width:45%;
+  height:200;
+}
+
+
+#submitSection{
+  display:block;
+}
+#submit{
+    display:block;
+    width: 100px;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    background: #2ecc71;
+    border: solid #ecf0f1 thin;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 40%;
+
+ }
+
+#submit:hover {
+    color: #ecf0f1;
+    background: #27ae60;
+    border: solid #ecf0f1 thin;
+}
+
+h3{
+  margin-bottom: 8px;
+}
+

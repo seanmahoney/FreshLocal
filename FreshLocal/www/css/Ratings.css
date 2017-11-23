@@ -1,0 +1,96 @@
+#mainArea{
+  margin-left: 4%;
+  margin-top: 40px;
+}
+
+h2{
+    padding-left: 1%;
+}
+
+h3{
+padding-left: 1%;
+}
+
+#text{
+    width:60%;
+    height:200px;
+}
+
+/*******  Star Ratings********************/
+
+form{
+
+    border:solid black thin;
+    float:left;
+    border-radius: 10px;
+}
+#stars label::before
+{
+    display: inline-block;
+}
+ 
+#stars label:hover, #stars label:hover~label
+{
+    color: #1293F6;
+}
+ 
+#stars *
+{
+    margin: 0;
+    padding: 0;
+}
+ 
+#stars input
+{
+    display: none;
+}
+ 
+#stars
+{   
+    display:block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+ 
+#stars label
+{
+    color: #ccc;
+}
+ 
+#stars label::before
+{
+    content: "\2605";
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+ 
+#stars input:checked ~ label
+{
+    color: #f5b301;
+}
+
+#submit{
+    display:block;
+    width: 100px;
+    color: #ecf0f1;
+    margin-left: 387px:;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    background: #2ecc71;
+    border: solid #ecf0f1 thin;
+    border-radius: 10px;
+    margin-top: 30px;
+
+ }
+
+#submit:hover {
+
+    color: #ecf0f1;
+    background: #27ae60;
+    border: solid #ecf0f1 thin;
+}
