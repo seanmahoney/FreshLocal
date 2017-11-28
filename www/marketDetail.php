@@ -20,7 +20,18 @@ get_header();
 		</div>
 	</section>
 	<section id="shopLayout">
-		<img src="" alt="" id="shape">
+		<div id="seaFoodArea" class="area">
+
+		</div>
+		<div id="vegArea" class="area">
+			
+		</div>
+		<div id="meatArea" class="area">
+			
+		</div>
+		<div id="restaurant" class="area">
+			
+		</div>
 	</section>
 
 	<script type="text/javascript" src="js/marketDetailPage.js"></script>

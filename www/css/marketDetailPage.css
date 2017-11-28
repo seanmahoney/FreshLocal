@@ -1,4 +1,4 @@
-div{
+#item,#farmer{
 	overflow: scroll;
 	height:200px;
 }
@@ -13,4 +13,40 @@ div{
 
 #shape{
 	max-width: 60%;
+}
+#shopLayout{
+	position:relative;
+	display: inline-block;
+	width:60%;
+}
+#seaFoodArea{
+	width:735px;
+	height:375px;
+	border:solid;
+	position: absolute;
+	background-image: url("../img/background-seafood.jpg");
+}
+#vegArea{
+	width:432px;
+	height:432px;
+	border:solid;
+	position: absolute;
+	background-image: url("../img/background-veg.jpg");
+}
+#meatArea{
+	width:430px;
+	height:456px;
+	border:solid;
+	position:absolute;
+	background-image: url("../img/background-meat.png");
+}
+#restaurant{
+	width:572px;
+	height: 70px;
+	border: solid;
+	position: absolute;
+	background-image: url("../img/background-restaurant.png");
+}
+.area{
+	display: none;
 }

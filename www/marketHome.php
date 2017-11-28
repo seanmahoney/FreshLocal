@@ -35,13 +35,20 @@ get_header();
 		</div>
 	</section>
 	<section id="marketLayout">
-		<canvas id="myCanvas" width="700px" height="400px" onclick="chooseArea()">
-		</canvas>
-		<img src="img/rec1.png" alt="rectangle" class="shape" id="rec1" >
-		<img src="img/rec2.png" alt="rectangle" class="shape" id="rec2" >
-		<img src="img/circle.png" alt="circle" class="shape" id="circle" >
-		<img src="img/triangle.png" alt="triangle" class="shape" id="triangle" >
-		<img src="img/weirdShape.png" alt="weirdShape" class="shape" id="weirdShape" >
+		<div id="marketMap">
+			<div id="seaFood">
+				<img src="img/rec1.png" alt="sea food" id="seaFoodI" class="image">
+			</div>
+			<div id="veg">
+				<img src="img/rec2.png" alt="veg" id="vegI" class="image">
+			</div>
+			<div id="meat">
+				<img src="img/rec3.png" alt="meat" id="meatI" class="image">
+			</div>
+			<div id="freshFood">
+				<img src="img/rec4.png" alt="fresh food" id="freshFoodI" class="image">
+			</div>
+		</div>
 	</section>
 	<script type="text/javascript" src="js/marketHomePage.js"></script>
 	<script async defer
