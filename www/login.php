@@ -2,6 +2,8 @@
  error_reporting(E_ALL & ~E_NOTICE);
  session_start();
  
+
+
 function clean($data) {
 	$data = trim($data);
 	$data = stripslashes($data);
@@ -49,7 +51,7 @@ if ($_POST['submit']) {
 	}
   
 }
- 
+
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +65,7 @@ if ($_POST['submit']) {
   <h2>FreshLocal Login</h2>
   <p>Please Insert your Username and Password to acess the system. Thank you</p>
   
-  <form method="post" action="login.php">
+  <form method="post" action="login.php" id="login">
 	<input type="text" placeholder="Username" name="username" /><br />
 	<input type="password" placeholder="Password" name="password" /><br />
 	<input type="submit" name="submit" value="Log In" />
