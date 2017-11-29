@@ -71,6 +71,7 @@ if(type=="seafood"){
 		li.addEventListener("click",function(){
 			filterShop(this,"seafood");
 		});
+
 	}
 	for(var i=0;i<3;i++){
 		var li=document.createElement("li");

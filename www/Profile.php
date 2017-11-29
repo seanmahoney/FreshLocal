@@ -17,27 +17,88 @@
 	<body>
 		<?php
 		include 'function.php';
+		include 'config.php';
 		get_header();
+		$farmerID=$_GET["farmerID"];
+		$name;
+		$profile;
+		$video;
+		$FAQ;
+		$sql="SELECT * FROM Farmers WHERE ID='$farmerID'";
+		if ($result = mysqli_query($con, $sql)) {
+			if ($result->num_rows == 0){
+				echo "This farmer is not working!";
+			}
+			else{
+				$row = $result->fetch_object();
+				$name = $row->Name;
+				$profile = $row->Profile;
+				$video = $row->Video_link;
+				$FAQ = $row->FAQ;
+			}
+		}
+		$rating;
+		$comment;
+		$i=0;
+		$sql="SELECT * FROM freshLocal_rating WHERE farmerId='$farmerID'";
+		if ($result = mysqli_query($con, $sql)) {
+			if ($result->num_rows == 0){
+				$comment[$i]="His customers are lazy";
+			}
+			else{
+				while ($row = $result->fetch_object()){
+					$rating[$i]=$row->rating;
+					$comment[$i]=$row->content;
+					$i=$i+1;
+				}
+			}
+		}
 		?> 
 		<div id="wrapper">
 			<div id="mainArea">
 				<div id="farmerProfile">
-					<div id="farmerName"></div>
+					<div id="farmerName">
+						<?php
+							echo $name;
+						?>
+					</div>
 					<h3>Profile</h3>
-					<div id="farmerMessage"></div>
+					<div id="farmerMessage">
+						<?php
+							echo $profile;
+						?>
+					</div>
 				</div>	
 				<div id="userComments">
 					<h3>User Comments</h3>
-					<div id="commentText"></div>
+					<div id="commentText">
+
+						<?php 
+							for ($i = 0; $i <= count($comment)-1; $i++) {
+							    echo "Comment:".$comment[$i];
+						  		echo "      Rating:".$rating[$i]."<br>";
+							}	
+						?>
+					</div>
 				</div>
 				<div id="FAQbox">
 					<h3>Frequently Asked Questions: </h3>
-					<div id="FAQs"></div>
+					<div id="FAQs">
+						<?php
+							echo $FAQ;
+						?>
+					</div>
 					<input type="button" name="rateFarmer" value="Rate Me" onclick="rateMe()">				
 				</div>	
 				<div id="videoSection">
 					<h3>Our Video!</h3>
-				<iframe width="300" height="200" id="video" src="">	</iframe>
+				<video width="400" controls>
+				  <source src=<?php echo "'".$video."'"; ?> type="video/mp4">
+				 
+				  Your browser does not support HTML5 video.
+				</video>
+
+
 				</div>
 			</div>		
 		</div>

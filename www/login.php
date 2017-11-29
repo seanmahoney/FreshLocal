@@ -2,6 +2,8 @@
  error_reporting(E_ALL & ~E_NOTICE);
  session_start();
  
+
+
 function clean($data) {
 	$data = trim($data);
 	$data = stripslashes($data);
@@ -53,7 +55,7 @@ if ($_POST['submit']) {
 	}
   
 }
- 
+
 ?>
 
 <!DOCTYPE html>
