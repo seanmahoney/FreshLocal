@@ -314,7 +314,7 @@ function filterShop(item,foodType){
 }
 
 function farmerInfo(name){
-	alert("Show farmer :" +name.id+" info");
+	
 	url="Profile.php"+"?"+"farmerID="+name.id;
 	window.location.assign(url);
 }

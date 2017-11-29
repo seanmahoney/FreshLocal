@@ -1,11 +1,5 @@
 var url=location.search;
 var farmerID=getParameterByName("farmerID");
-alert("The farmer you choose to rate is :"+farmerID);
-
-
-
-
-
 
 
 function getParameterByName(name, url) {

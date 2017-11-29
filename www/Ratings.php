@@ -19,7 +19,6 @@
 		include 'function.php';
 		get_header();
 		$farmerID=$_GET["farmerID"];
-		echo $farmerID;
 
 		
 		
@@ -28,7 +27,7 @@
 			<div id="mainArea">
 				<h2>Rate</h2>
 				<div id="farmerName" name="farmerName"></div>
-				<form method="post" action='commentSubmit.php?farmerID=10'>
+				<form method="post" action=<?php echo 'commentSubmit.php?farmerID='.$farmerID; ?>>
 				<div id="textBox">
 					<input type="textArea" id = "text" placeholder="Comments" name="comment">  
               		</input>

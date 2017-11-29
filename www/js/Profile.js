@@ -1,6 +1,6 @@
 var url=location.search;
 var farmerID=getParameterByName("farmerID");
-alert("The profile of this farmer is :"+farmerID);
+
 
 
 function rateMe(){
