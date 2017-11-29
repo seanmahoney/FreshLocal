@@ -71,12 +71,15 @@ if(type=="seafood"){
 		li.addEventListener("click",function(){
 			filterShop(this,"seafood");
 		});
-	 }
+
+	}
 	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode(i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
-		li.className="liFarmer"
+		li.className="liFarmer";
+		li.id=i;
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
 			farmerInfo(this);
@@ -135,9 +138,11 @@ if(type=="veg"){
 	 }
 	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode(i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
-		li.className="liFarmer"
+		li.className="liFarmer";
+		li.id=i;
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
 			farmerInfo(this);
@@ -192,8 +197,10 @@ if(type=="meat"){
 	 }
 	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode(i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
+		li.id=i;
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
@@ -229,9 +236,11 @@ if(type=="restaurant"){
 	 }
 	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode(i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
-		li.className="liFarmer"
+		li.className="liFarmer";
+		li.id=i;
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
 			farmerInfo(this);
@@ -305,7 +314,8 @@ function filterShop(item,foodType){
 }
 
 function farmerInfo(name){
-	url="Profile.php"+"?"+"farmerID="+name.innerHTML;
+	alert("Show farmer :" +name.id+" info");
+	url="Profile.php"+"?"+"farmerID="+name.id;
 	window.location.assign(url);
 }
 function getParameterByName(name, url) {
