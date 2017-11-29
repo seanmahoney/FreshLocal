@@ -71,15 +71,16 @@ if(type=="seafood"){
 		li.addEventListener("click",function(){
 			filterShop(this,"seafood");
 		});
-	 }
-	for(var i=0;i<10;i++){
+	}
+	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode("farmer"+i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(this);
 		});
 	}
 
@@ -133,14 +134,15 @@ if(type=="veg"){
 			filterShop(this,"veg");
 		});
 	 }
-	for(var i=0;i<10;i++){
+	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode("farmer"+i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(this);
 		});
 	}
 	vegArea.style.display="initial";
@@ -190,14 +192,15 @@ if(type=="meat"){
 			filterShop(this,"meat");
 		});
 	 }
-	for(var i=0;i<10;i++){
+	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode("farmer"+i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(this);
 		});
 	}
 	meatArea.style.display="initial";
@@ -227,14 +230,15 @@ if(type=="restaurant"){
 			filterShop(this,"restaurant");
 		});
 	 }
-	for(var i=0;i<10;i++){
+	for(var i=0;i<3;i++){
 		var li=document.createElement("li");
-		var text=document.createTextNode("farmer"+i);
+		var names=["Sean","Rami","Yanjun"];
+		var text=document.createTextNode(names[i]);
 		li.appendChild(text);
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(this);
 		});
 	}
 	restaurant.style.display="initial";
@@ -305,8 +309,8 @@ function filterShop(item,foodType){
 }
 
 function farmerInfo(name){
-	alert("Show farmer :" +name+" info");
-	url="Profile.php"+"?"+"farmerID="+name;
+	alert("Show farmer :" +name.innerHTML+" info");
+	url="Profile.php"+"?"+"farmerID="+name.innerHTML;
 	window.location.assign(url);
 }
 function getParameterByName(name, url) {
