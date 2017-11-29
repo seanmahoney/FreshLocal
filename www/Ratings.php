@@ -1,9 +1,4 @@
-<?php
-session_start();
-$username = $_SESSION['username']; 
 
-echo $username;
-?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -25,12 +20,15 @@ echo $username;
 		get_header();
 		$farmerID=$_GET["farmerID"];
 		echo $farmerID;
+
+		
+		
 		?> 
 		<div id="wrapper">
 			<div id="mainArea">
 				<h2>Rate</h2>
 				<div id="farmerName" name="farmerName"></div>
-				<form method="post" action='commentSubmit.php'>
+				<form method="post" action='commentSubmit.php?farmerID=10'>
 				<div id="textBox">
 					<input type="textArea" id = "text" placeholder="Comments" name="comment">  
               		</input>
