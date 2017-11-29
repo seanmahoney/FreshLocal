@@ -17,7 +17,32 @@
 	<body>
 		<?php
 		include 'function.php';
+		include 'config.php';
 		get_header();
+		$farmerID=$_GET["farmerID"];
+		$sql="SELECT * FROM freshLocal_users WHERE userId='$farmerID'";
+		if ($result = mysqli_query($con, $sql)) {
+			if ($result->num_rows == 0){
+				echo "Wrong User name or password";
+			}
+			else{
+				$row = $result->fetch_object();
+				echo "Welcome ".$row->userName;
+			}
+		}
+		$rating;
+		$comment;
+		$sql="SELECT * FROM freshLocal_rating WHERE farmerId='$farmerID'";
+		if ($result = mysqli_query($con, $sql)) {
+			if ($result->num_rows == 0){
+				echo "Wrong User name or password";
+			}
+			else{
+				$row = $result->fetch_object();
+				$rating=$row->rating;
+				$comment=$row->content;
+			}
+		}
 		?> 
 		<div id="wrapper">
 			<div id="mainArea">
@@ -28,7 +53,11 @@
 				</div>	
 				<div id="userComments">
 					<h3>User Comments</h3>
-					<div id="commentText"></div>
+					<div id="commentText">
+						<?php echo "Comment:".$comment;
+							  echo "<br>Rating:".$rating;
+						?>
+					</div>
 				</div>
 				<div id="FAQbox">
 					<h3>Frequently Asked Questions: </h3>

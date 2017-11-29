@@ -79,7 +79,7 @@ if(type=="seafood"){
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(i);
 		});
 	}
 
@@ -140,7 +140,7 @@ if(type=="veg"){
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(i);
 		});
 	}
 	vegArea.style.display="initial";
@@ -197,7 +197,7 @@ if(type=="meat"){
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(i);
 		});
 	}
 	meatArea.style.display="initial";
@@ -234,7 +234,7 @@ if(type=="restaurant"){
 		li.className="liFarmer"
 		ulForFarmer.appendChild(li);
 		li.addEventListener("click",function(){
-			farmerInfo(li.innerHTML);
+			farmerInfo(i);
 		});
 	}
 	restaurant.style.display="initial";

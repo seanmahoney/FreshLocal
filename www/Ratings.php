@@ -17,29 +17,31 @@
 		<?php
 		include 'function.php';
 		get_header();
+		$farmerID=$_GET["farmerID"];
+		echo $farmerID;
 		?> 
 		<div id="wrapper">
 			<div id="mainArea">
 				<h2>Rate</h2>
-					<div id="farmerName" name="farmerName"></div>
+				<div id="farmerName" name="farmerName"></div>
+				<form method="post" action='commentSubmit.php'>
 				<div id="textBox">
-					<textarea id = "text" placeholder="Comments">  
-              		</textarea>
+					<input type="textArea" id = "text" placeholder="Comments" name="comment">  
+              		</input>
 				</div>
 				<h3>Rating</h3>
 				<div id="stars">
-					 <form>
-        				<input type="radio" name="group-1" id="group-1-0" value="5" /><label for="group-1-0"></label>
-        				<input type="radio" name="group-1" id="group-1-1" value="4" /><label for="group-1-1"></label>
-        				<input type="radio" name="group-1" id="group-1-2" value="3" /><label for="group-1-2"></label>
-        				<input type="radio" name="group-1" id="group-1-3" value="2" /><label for="group-1-3"></label>
-        				<input type="radio" name="group-1" id="group-1-4"  value="1" /><label for="group-1-4"></label>
-    				</form>
+					 
+    				<input type="radio" name="group-1" id="group-1-0" value="5" /><label for="group-1-0"></label>
+    				<input type="radio" name="group-1" id="group-1-1" value="4" /><label for="group-1-1"></label>
+    				<input type="radio" name="group-1" id="group-1-2" value="3" /><label for="group-1-2"></label>
+    				<input type="radio" name="group-1" id="group-1-3" value="2" /><label for="group-1-3"></label>
+    				<input type="radio" name="group-1" id="group-1-4"  value="1" /><label for="group-1-4"></label>
+    				<input type= "submit" id="submit" value= "Submit">
+    			</form>
 				</div>
-				<br>
-				<br>
-				<br>	
-				<input type= "submit" id="submit" value= "Submit" onClick =""/>
+				
+				
 			</div>	
 		</div>
 		<script type="text/javascript" src="js/Ratings.js"></script>
