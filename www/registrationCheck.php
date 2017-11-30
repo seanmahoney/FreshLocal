@@ -19,16 +19,12 @@
 			header( "refresh:5; url=login.php" ); 
 			exit();
 		}
-		if($value=="farmer"){
+		if($value=="farmer")
 			$video=$_POST['video'];
-			$phonenumber=$_POST['phonenumber'];
-			$FAQ=$_POST['FAQ'];
-			$profile=$_POST['profile'];
-		}
 
 		include_once("config.php");
 		if($value=="farmer")
-			$sql = "INSERT INTO Farmers (Name, Profile, PhoneNumber,Email,Video_link,FAQ,password) VALUES ('$username', '$profile','$phonenumber','$email', '$video','$FAQ','$password')";   //error check?
+			$sql = "INSERT INTO freshLocal_users (userName, password, email,video) VALUES ('$username', '$password', '$email', '$video')";   //error check?
 		else
 			$sql = "INSERT INTO freshLocal_users (userName, password, email) VALUES ('$username', '$password', '$email')";
 		//echo $sql;

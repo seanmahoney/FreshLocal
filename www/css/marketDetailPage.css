@@ -1,20 +1,31 @@
+html{
+  background-color: #E7f3ff; 
+}
+
 #item,#farmer{
+	background-color:#ffffe6;
 	overflow: scroll;
 	height:200px;
+}
+#farmer{
+	margin-top: 10px;
 }
 
 
 
 #itemAndFarmer{
+	margin-top:25px;
+	margin-right:10%;
 	display: inline-block;
 	float: left;
-	width: 30%;
+	width: 25%;
 }
 
 #shape{
 	max-width: 60%;
 }
 #shopLayout{
+	margin-top: 25px;
 	position:relative;
 	display: inline-block;
 	width:60%;

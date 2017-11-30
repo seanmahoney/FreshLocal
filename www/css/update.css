@@ -1,6 +1,10 @@
+html{
+  background-color: #E7f3ff; 
+
+}
 #mainArea{
   margin-left: 4%;
-  margin-top: 200px;
+  margin-top: 25px;
 }
 
 #headline{

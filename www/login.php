@@ -17,8 +17,8 @@ function clean($data) {
   
   $username = clean($_POST['username']);
   $password = clean($_POST['password']);
-  $type=clean($_POST['type']);
-  if ($username  == $dbUserName && $password == $dbPassword) {
+  
+  if ($username == $dbUserName && $password == $dbPassword) {
 
    $_SESSION['username'] = $username;
    $_SESSION['password'] = $password;
@@ -29,14 +29,10 @@ function clean($data) {
  }
 if ($_POST['submit']) {
 	include_once("config.php");
-	// $username = strip_tags($_POST['username']);
-	// $password = strip_tags($_POST['password']);
-	if($type=="user"){
-		$sql = "SELECT userId, userName, password FROM freshLocal_users WHERE userName= '$username' AND password='$password'";
-	}
-	if($type=="farmer"){
-		$sql = "SELECT ID, Name, password FROM Farmers WHERE Name= '$username' AND password='$password'";
-	}
+	//$username = strip_tags($_POST['username']);
+	//$password = strip_tags($_POST['password']);
+	
+	$sql = "SELECT userId, userName, password FROM freshLocal_users WHERE userName = '$username' AND password='$password'";
 	$query = mysqli_query($con, $sql);
 	
 	if ($query) {
@@ -69,14 +65,12 @@ if ($_POST['submit']) {
   <h2>FreshLocal Login</h2>
   <p>Please Insert your Username and Password to acess the system. Thank you</p>
   
-  <form method="post" action="login.php">
-  	User:<input type="checkbox" name="type" value="user" checked id="cbUser">
-  	Farmer:<input type="checkbox" name="type" value="farmer" id="cbFarmer"><br/>
+  <form method="post" action="login.php" id="login">
 	<input type="text" placeholder="Username" name="username" /><br />
 	<input type="password" placeholder="Password" name="password" /><br />
 	<input type="submit" name="submit" value="Log In" />
-  </form>
+
+</form>
   <p>If you don't have an account </p><a href="registrationType.php">Sign Up Here</a>
-    <script type="text/javascript" src="js/login.js"></script>
  </body>
 </html>

@@ -18,23 +18,14 @@
 						<td><input type="text" name="username" placeholder="User Name" required /></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number"></td>
-					</tr>
-					<tr>
 						<td><input type="text" name="email" placeholder="Your Email" required /></td>
 					</tr>
 					<tr>
 						<td><input type="password" name="password" placeholder="Your Password" required /></td>
 					</tr>
 					<tr>
-						<td><input type="url" name="video" id="video" placeholder="Video Link" required/></td>
-					</tr>
-					<tr>
-						<td><textarea rows="5" cols="50" name="FAQ" id="FAQ" placeholder="FAQ"></textarea></td>
+						<td><input type="text" name="video" id="video" placeholder="Video Link" required/></td>
 					</tr>   
-					<tr>
-						<td><textarea rows="4" cols="50" name="profile" id="profile" placeholder="Profile" placeholder="FAQ"></textarea></td>
-					</tr>
 					<tr> 
 						<td><input type="submit" name="signup" value ="Sign Me Up"/></td>
 					</tr>
