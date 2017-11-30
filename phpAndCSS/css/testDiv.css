@@ -1,0 +1,57 @@
+#map{
+	border:1px;
+	border-style: solid;
+	width:650px;
+	height:350px;
+	position: relative;
+}
+#seaFood{
+	position: absolute;
+	width:300px;
+	height: 150px;
+	margin: 10px;
+}
+#seaFoodI{
+	width:300px;
+	height: 150px;
+}
+
+#veg{
+	position: absolute;
+	top: 180px;
+	left:80px;
+	width:150px;
+	height:150px;
+	border:1px,solid;
+}
+#vegI{
+	width:150px;
+	height:150px;
+}
+
+#meat{
+	position: absolute;
+	top:10px;
+	left:380px;
+	height: 230px;
+	width:200px;
+}
+#meatI{
+	height: 230px;
+	width:200px;
+}
+
+#freshFood{
+	position: absolute;
+	bottom:20px;
+	left:290px;
+	width: 250px;
+	height:80px;
+}
+#freshFoodI{
+	width: 330px;
+	height:80px;
+}
+.image:hover{
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.50);
+}
