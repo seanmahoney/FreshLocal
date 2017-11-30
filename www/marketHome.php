@@ -18,11 +18,11 @@ $username = $_SESSION['username'];
 include 'function.php';
 get_header();
 ?> 
+	<h1>Scotia Farmer Market</h1>
 	<section id="marketInfo">
 		<div>
-			<h4>Scotia Farmer Market</h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-			<label>Time of Open</label><br>
+			<label>Hours of Operation</label><br>
 			<p>
 				<ul>
 					<li>Monday     xxxx-xxxx</li>
@@ -36,7 +36,8 @@ get_header();
 			</p>
 			<label>Address</label>
 			<div id="map"></div>
-			<label>Contact</label><br>
+			<br>
+			<label>Contact:</label><br>
 			<label>902-xxx-xxxx</label>
 		</div>
 	</section>

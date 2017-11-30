@@ -53,9 +53,5 @@ function initMap() {
     zoom: 15,
     center: uluru
   });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
 }
 
