@@ -1,3 +1,9 @@
+<?php
+session_start();
+$username = $_SESSION['username']; 
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,11 +18,11 @@
 include 'function.php';
 get_header();
 ?> 
+	<h1>Scotia Farmer Market</h1>
 	<section id="marketInfo">
 		<div>
-			<h4>Scotia Farmer Market</h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-			<label>Time of Open</label><br>
+			<label>Hours of Operation</label><br>
 			<p>
 				<ul>
 					<li>Monday     xxxx-xxxx</li>
@@ -30,18 +36,26 @@ get_header();
 			</p>
 			<label>Address</label>
 			<div id="map"></div>
-			<label>Contact</label><br>
+			<br>
+			<label>Contact:</label><br>
 			<label>902-xxx-xxxx</label>
 		</div>
 	</section>
 	<section id="marketLayout">
-		<canvas id="myCanvas" width="700px" height="400px" onclick="chooseArea()">
-		</canvas>
-		<img src="img/rec1.png" alt="rectangle" class="shape" id="rec1" >
-		<img src="img/rec2.png" alt="rectangle" class="shape" id="rec2" >
-		<img src="img/circle.png" alt="circle" class="shape" id="circle" >
-		<img src="img/triangle.png" alt="triangle" class="shape" id="triangle" >
-		<img src="img/weirdShape.png" alt="weirdShape" class="shape" id="weirdShape" >
+		<div id="marketMap">
+			<div id="seaFood">
+				<img src="img/rec1.png" alt="sea food" id="seaFoodI" class="image">
+			</div>
+			<div id="veg">
+				<img src="img/rec2.png" alt="veg" id="vegI" class="image">
+			</div>
+			<div id="meat">
+				<img src="img/rec3.png" alt="meat" id="meatI" class="image">
+			</div>
+			<div id="freshFood">
+				<img src="img/rec4.png" alt="fresh food" id="freshFoodI" class="image">
+			</div>
+		</div>
 	</section>
 	<script type="text/javascript" src="js/marketHomePage.js"></script>
 	<script async defer

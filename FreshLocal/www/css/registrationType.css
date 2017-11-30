@@ -1,0 +1,21 @@
+section{
+	display: center;
+}
+#userImg,#farmerImg{
+	width:200px;
+	height:200px;
+	display: block;
+}
+img:hover{
+	cursor: pointer;
+}
+
+#pic{
+	display: inline-block;
+	margin: 100px;
+}
+
+p{
+	text-align: center;
+	width: 200px;
+}

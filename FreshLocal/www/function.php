@@ -8,7 +8,7 @@
   function login_corner(){
   	echo "<ul class='secondary_navigation'>";
 	echo "<li class='secondary_navigation_item'><a class='secondary_navigation_link' href='#home'>Account</a></li>";
-	echo "<li class='secondary_navigation_item'><a class='secondary_navigation_link' href='#news'>Login</a></li>";
+	echo "<li class='secondary_navigation_item'><a class='secondary_navigation_link' href='login.php'>Login</a></li>";
 	echo "<li class='secondary_navigation_item'><a class='secondary_navigation_link' href='#contact'>Info</a></li>";
 	
 	echo "</ul>";

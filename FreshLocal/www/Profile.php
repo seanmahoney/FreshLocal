@@ -33,7 +33,7 @@
 				<div id="FAQbox">
 					<h3>Frequently Asked Questions: </h3>
 					<div id="FAQs"></div>
-					<input type="button" name="rateFarmer" value="Rate Me" onclick="rateMe()">				
+					<input type="button" name="rateFarmer" id ="rateButton" value="Rate Me" onclick="rateMe()">			
 				</div>	
 				<div id="videoSection">
 					<h3>Our Video!</h3>

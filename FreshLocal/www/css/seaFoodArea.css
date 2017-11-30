@@ -1,0 +1,36 @@
+html{
+  background-color: #E7f3ff; 
+}
+
+#vegArea{
+	width:432px;
+	height:432px;
+	border:solid;
+	position: relative;
+	background-image: url("../img/background-veg.jpg");
+}
+
+#itemAndFarmer{
+	margin-top: 10px;
+}
+#shopLayout{
+	margin-left:10%;
+	margin-top:12px;
+}
+/*#stall1{
+	position: relative;
+	top:30px;
+	left:30px;
+}
+
+#stall2{
+	position: relative;
+	top:30px;
+	left:50px;
+}
+
+#stall3{
+	position: relative;
+	top:30px;
+	left:50px;
+}*/

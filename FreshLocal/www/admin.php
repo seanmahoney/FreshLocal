@@ -1,6 +1,10 @@
 <?php
 	error_reporting(E_ALL & ~E_NOTICE);
-
+	session_start();
+	if($_SESSION('username')!="admin" && $_SESSION('password')!="password"){
+		header("Location:login.php");
+		exit();
+	}
 	
 ?>
 <!DOCTYPE html>
