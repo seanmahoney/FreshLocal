@@ -70,12 +70,12 @@ if ($_POST['submit']) {
   <h2>FreshLocal Login</h2>
   <p>Please Insert your Username and Password to acess the system. Thank you</p>
   
-  <form method="post" action="login.php">
+  <form method="post" action="login.php" id="login">
   	User:<input type="checkbox" name="type" value="user" checked id="cbUser">
   	Farmer:<input type="checkbox" name="type" value="farmer" id="cbFarmer"><br/>
 	<input type="text" placeholder="Username" name="username" class = "field"/><br />
 	<input type="password" placeholder="Password" name="password" class = "field"/><br />
-	<input type="submit" name="submit" value="Log In" />
+	<input type="submit" name="submit" id="submit" value="Log In" />
   </form>
   <p>If you don't have an account </p><a href="registrationType.php">Sign Up Here</a>
     <script type="text/javascript" src="js/login.js"></script>
