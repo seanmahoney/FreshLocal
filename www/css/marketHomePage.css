@@ -1,7 +1,19 @@
+html{
+  background-color: #E7f3ff; 
+}
+
+h1{
+	display: block;
+	text-align: center;
+	margin-bottom: 40px;
+}
 h4{
 	border: 0px;
 	margin: 0px;
 	padding:0px;
+}
+label{
+	font-weight: bold;
 }
 
 #map{
@@ -11,19 +23,22 @@ h4{
 }
 
 #marketInfo{
+	margin-left: 4%;
+  	margin-top: 10px;
 	width:30%;
 	height: 80%;
 	display: inline-block;
 	float: left;
-	margin:10px;
 }
 
 #marketLayout{
 	width: 60%;
 	height: 80%;
-	margin:10px;
+	margin-top:55px;
+	margin-left: 6%;
 	display: inline-block;
 }
+
 /*#myCanvas{
 
  	margin-top: 50px;
@@ -35,11 +50,13 @@ h4{
 }*/
 
 #marketMap{
+	margin-left:10%;
 	border:1px;
 	border-style: solid;
 	width:650px;
 	height:350px;
 	position: relative;
+	background-color:#ffffe6;
 }
 #seaFood{
 	position: absolute;
