@@ -1,6 +1,10 @@
+html{
+  background-color: #E7f3ff; 
+}
+
 #mainArea{
   margin-left: 4%;
-  margin-top: 200px;
+  margin-top: 25px;
 }
 
 h2{
@@ -12,17 +16,16 @@ padding-left: 1%;
 }
 
 #text{
+    border:solid thin black;
+    border-radius: 10px;
     width:60%;
     height:200px;
 }
 
 /*******  Star Ratings********************/
 
-form{
-
-    border:solid black thin;
-    float:left;
-    border-radius: 10px;
+#stars {
+    width:220px;
 }
 #stars label::before
 {
@@ -83,7 +86,7 @@ form{
     text-align: center;
     background: #2ecc71;
     border: solid #ecf0f1 thin;
-    border-radius: 10px;
+    border-radius: 3px;
     margin-top: 30px;
 
  }

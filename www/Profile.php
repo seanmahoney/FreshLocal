@@ -88,11 +88,11 @@
 							echo $FAQ;
 						?>
 					</div>
-					<input type="button" name="rateFarmer" value="Rate Me" onclick="rateMe()">				
+					<input type="button" name="rateFarmer" id ="rateButton" value="Rate Me" onclick="rateMe()">				
 				</div>	
 				<div id="videoSection">
 					<h3>Our Video!</h3>
-				<video width="400" controls>
+				<video width="400" id="video" controls>
 				  <source src=<?php echo "'".$video."'"; ?> type="video/mp4">
 				 
 				  Your browser does not support HTML5 video.
