@@ -50,10 +50,10 @@
 						<td><input type="url" name="video" id="video" placeholder="Video Link" class="field" value="<?php echo $video ?>" required/></td>
 					</tr>
 					<tr>
-						<td><textarea rows="5" cols="50" name="FAQ" id="FAQ" placeholder="FAQ" value="<?php echo $FAQ ?>" class="field"></textarea></td>
+						<td><textarea rows="5" cols="50" name="FAQ" id="FAQ" placeholder="FAQ" value="" class="field"><?php echo $FAQ ?></textarea></td>
 					</tr>   
 					<tr>
-						<td><textarea rows="4" cols="50" name="profile" id="profile" placeholder="Profile" value="<?php  echo $profile ?>"  class="field"></textarea></td>
+						<td><textarea rows="4" cols="50" name="profile" id="profile" placeholder="Profile" value=""  class="field"><?php  echo $profile ?></textarea></td>
 					</tr>
 					<tr> 
 						<td><input type="submit" name="signup" id="submit" value ="Update"/></td>
