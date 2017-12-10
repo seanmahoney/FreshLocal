@@ -49,9 +49,11 @@ if ($_POST['submit']) {
 	if ($username == $dbUsername && $password == $dbPassword) {
 		$_SESSION['username'] = $username;
 		$_SESSION['id'] = $userId;
+		$_SESSION['type']=$type;
 		header('Location: marketHome.php');
+		$_SESSION['login-status'] = true;
 	} else {
-		echo "Incorrect username or password.";
+		echo "<script>alert('Incorrect username or password.') </script>";
 	}
   
 }
@@ -63,10 +65,14 @@ if ($_POST['submit']) {
  <head>
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="css/login.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
  </head>
  
  <body>
-
+ <?php
+include 'function.php';
+get_header();
+?>  
   <h2>FreshLocal Login</h2>
   <p>Please Insert your Username and Password to acess the system. Thank you</p>
   
