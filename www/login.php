@@ -50,6 +50,7 @@ if ($_POST['submit']) {
 		$_SESSION['username'] = $username;
 		$_SESSION['id'] = $userId;
 		header('Location: marketHome.php');
+		$_SESSION['login-status'] = true;
 	} else {
 		echo "Incorrect username or password.";
 	}

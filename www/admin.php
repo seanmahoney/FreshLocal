@@ -1,7 +1,9 @@
 <?php
 	error_reporting(E_ALL & ~E_NOTICE);
+	include 'function.php';
+	get_header();
 	session_start();
-	if($_SESSION('username')!="admin" && $_SESSION('password')!="password"){
+	if($_SESSION['username']!="admin" && $_SESSION['password']!="password"){
 		header("Location:login.php");
 		exit();
 	}
@@ -10,6 +12,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<title>Admin Panel</title>
 </head>
 <body>
