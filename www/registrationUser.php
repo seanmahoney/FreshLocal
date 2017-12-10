@@ -6,9 +6,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Registration System</title>
 	<link rel="stylesheet" type="text/css" href="css/userLogin.css">
-
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<?php
+include 'function.php';
+get_header();
+?> 
 	<center>
 		<div id="login-form">
 			<h2>Registration</h2>

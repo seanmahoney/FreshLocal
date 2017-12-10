@@ -1,0 +1,14 @@
+html{
+  background-color: #E7f3ff; 
+}
+body{
+	text-align: center;
+}
+table{
+	text-align: center;
+	border:1px solid #bdc3c7;
+	border-color: green;
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 30px;
+}
