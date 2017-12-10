@@ -19,7 +19,7 @@
 			$sql="INSERT INTO freshLocal_rating (userId,rating,content,uploadDate,farmerId) VALUES('$userId','$rating','$content','$date','$farmerId')";
 			if ($result = mysqli_query($con, $sql)) {
 				echo "Comment Successfully";
-				
+				header('Location:Profile.php?farmerID='.$farmerId);
 			   
 			}
 			else{

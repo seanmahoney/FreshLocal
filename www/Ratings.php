@@ -19,9 +19,14 @@
 		include 'function.php';
 		get_header();
 		$farmerID=$_GET["farmerID"];
-
-		
-		
+		if ($_SESSION['login-status']){
+		    
+		}
+		else{
+		    echo "<script>alert ('You should Log in to rate a farmer.');</script>";
+		    header('Location:login.php');
+		}
+				
 		?> 
 		<div id="wrapper">
 			<div id="mainArea">

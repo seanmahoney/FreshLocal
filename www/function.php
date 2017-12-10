@@ -1,8 +1,5 @@
 <?php
-
   session_start();
-
-
   function get_header(){
   	echo "<div class='header'>";
   	get_logo();
@@ -10,6 +7,7 @@
 	echo "</div>";
   }
   function login_corner(){
+
     $account="<a class='secondary_navigation_link' href='login.php'>Account</a>";
     $id=$_SESSION['id'];
     $type=$_SESSION['type'];
