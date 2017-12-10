@@ -12,8 +12,8 @@
 	<center>
 		<div id="login-form">
 			<h2>Registration</h2>
-			<form method="POST" action="registrationCheck.php">
-				<table align="center" width="30%" border="0">
+			<form method="POST" action="registrationCheck.php" id="login">
+				<table align="center" width="100%" border="0">
 					<tr>
 						<td><input type="text" name="username" placeholder="User Name" class="field" required /></td>
 					</tr>
